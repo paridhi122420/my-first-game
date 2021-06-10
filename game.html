@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Harry Potter Quiz Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js">
+	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js">
+
+		<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCgGyk62X7RT95B8UVkNbU_tKQORZrmOVI",
+    authDomain: "hello-bf5ed.firebaseapp.com",
+    databaseURL: "https://hello-bf5ed-default-rtdb.firebaseio.com",
+    projectId: "hello-bf5ed",
+    storageBucket: "hello-bf5ed.appspot.com",
+    messagingSenderId: "182748057999",
+    appId: "1:182748057999:web:ac1037f64b049d4e137bfa"
+  };
+  //Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+	
+	
+</head>
+<body>
+<div class="grid">
+	<div id="quiz">
+		<h1>Quiz</h1>
+		<hr style="margin-top: 20px">
+		<p id="question"></p>
+		<div class="buttons">
+			<button id="btn0"><span id="choice0"></span> </button>
+			<button id="btn1"><span id="choice1"></span> </button>
+			<button id="btn2"><span id="choice2"></span> </button>
+			<button id="btn3"><span id="choice3"></span> </button>
+		</div>
+
+		<hr style="margin-top: 50px">
+		<footer>
+			<p id="progress">Question x of y.</p>
+		</footer>
+	</div>
+	<script type="text/javascript" src="quiz_controller.js"></script>
+	<script type="text/javascript" src="questions.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</div>
+</body>
+</html>
